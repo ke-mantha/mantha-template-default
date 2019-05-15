@@ -1,5 +1,9 @@
-<h1 align="center">
-  <img alt="Mantha" src="/mantha-logo.svg" style="max-width: 70%"/>
-</h1>
+## Build Setup
 
-Webpack 4 Vue.js typescript-friendly starter kit with A LOT of automated processes
+``` bash
+# serve with hot reload at localhost:8080
+$ npm run dev
+
+# build for production
+$ npm run build
+```
