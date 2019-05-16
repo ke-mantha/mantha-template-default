@@ -7,9 +7,8 @@
   "main": "build/production/index.html",
   "scripts": {
     "dev": "webpack-dev-server --config .webpack.config/webpack.dev.server.ts",
-    "build:all": "npm-run-parallel build build:dev build:module",
+    "build:all": "npm-run-parallel build build:dev",
     "build:dev": "webpack --config .webpack.config/webpack.dev.ts",
-    "build:module": "webpack --config .webpack.config/webpack.module.ts",
     "build": "webpack --config .webpack.config/webpack.prod.ts",
     "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "test": "jest",
@@ -19,6 +18,7 @@
     "postinstall": "ts-node init"
   },
   "devDependencies": {
+    "@mantha/webpack-config": "git+https://github.com/ke-mantha/mantha-webpack-config.git",
     "@types/clean-webpack-plugin": "^0.1.2",
     "@types/copy-webpack-plugin": "^4.4.2",
     "@types/friendly-errors-webpack-plugin": "^0.1.1",
@@ -73,8 +73,6 @@
     "typescript": "^3.1.2",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.2",
-    "vue-template-compiler": "^2.5.17",
-    "vue-template-loader": "^1.0.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.2.1",
@@ -82,15 +80,8 @@
     "write-file-webpack-plugin": "^4.4.1"
   },
   "dependencies": {
-    "async-usage": "^1.0.2",
-    "kefetchup": "^1.0.4",
     "normalize.css": "^8.0.0",
-    "parakeet-mapper": "^1.0.2",
-    "small-flexgrid": "^2.2.3",
-    "vue": "^2.5.17",
-    "vue-i18n": "^8.10.0",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "small-flexgrid": "^2.2.3"
   },
   "babel": {
     "plugins": [
