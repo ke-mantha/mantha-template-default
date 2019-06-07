@@ -6,10 +6,10 @@
   "repository": "--repo--",
   "main": "build/production/index.html",
   "scripts": {
-    "dev": "webpack-dev-server --config .webpack.config/webpack.dev.server.ts",
+    "dev": "webpack-dev-server --config webpack.config/webpack.dev.server.ts",
     "build:all": "npm-run-parallel build build:dev",
-    "build:dev": "webpack --config .webpack.config/webpack.dev.ts",
-    "build": "webpack --config .webpack.config/webpack.prod.ts",
+    "build:dev": "webpack --config webpack.config/webpack.dev.ts",
+    "build": "webpack --config webpack.config/webpack.prod.ts",
     "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "test": "jest",
     "test:report": "npm run test -- --verbose",
